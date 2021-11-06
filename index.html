@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 700px) {
+    
+            #main-doc{
+                width: 96%;
+                position: relative;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 450px;
+            }
+            #navbar {
+                position: absolute;
+                width: 99%;
+                max-height: 425px;
+                border: none;
+                top: 0;
+                padding: 0px;
+                margin: 2px;
+                z-index: 1;
+                border-bottom: 2px solid;
+            }
+            #navbar ul{
+                border: 1px solid;
+                height: 207px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Python</h1>
+            <img src="media/1200px-Python-logo.png" alt="Python logo">
+            <hr>
+        </header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#what_can_python_do" class="nav-link">What can Python do</a></li>
+            <li><a href="#executing_syntax" class="nav-link">Executing Syntax</a></li>
+            <li><a href="#python_variables" class="nav-link">Python Variables</a></li>
+            <li><a href="#python_data_types" class="nav-link">Python Data Types</a></li>
+            <li><a href="#python_if_else" class="nav-link">Python if Else</a></li>
+            <li><a href="#python_boolean" class="nav-link">Python Boolean</a></li>
+            <li><a href="#python_while_loops" class="nav-link">Python While Loops</a></li>
+            <li><a href="#additional" class="nav-link">Additional</a></li>
+        </ul>
+
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <article>
+                <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                <p>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</p>
+                <p>Python has a simple syntax similar to the English language.</p>
+                <p>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</p>
+                <p>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</p>
+                <p>Python can be treated in a procedural way, an object-oriented way or a functional way.</p>
+                <p>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</p>
+                <p>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</p>
+                <p>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</p>
+            </article>
+        </section>
+        <!---------------------------------->
+        <section id="what_can_python_do" class="main-section">
+            <header>What can Python do</header>
+            
+            <article>
+                <ul>
+                    <li>Python can be used on a server to create web applications.</li>
+                    <li>Python can be used alongside software to create workflows.</li>
+                    <li>Python can connect to database systems. It can also read and modify files.</li>
+                    <li>Python can be used to handle big data and perform complex mathematics</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                    <p>It is used for:</p>
+                    <li>Web development(server-side)</li>
+                    <li>Software Development</li>
+                    <li>Mathematics</li>
+                    <li>System Scripting</li>
+                </ul>
+            </article>
+        </section>   
+        <!---------------------------------->
+        <section id="executing_syntax" class="main-section">
+            <header>Executing Syntax</header>
+            <article>
+                Python syntax can be executed by writing directly in the Command: <br>
+                <code>
+                    >>> print("Hello,World") <br>
+                    Hello, World    
+                </code>
+                <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line: <br>
+                    C:\Users\Your Name>python myfile.py    
+                </p>
+            </article>
+        </section>
+        <!--------------------------------->
+        <section id="python_variables" class="main-section">
+            <header>Python Variables</header>
+            <article>
+                <p>Variables are containers for storing data values.</p>
+                <h3>Creating Variables</h3>
+                <p>Python has no command for declaring a variable</p>
+                <p>A variable is created the moment you first assign a value to it.</p>
+                <code> x = 5 <br>
+                    y = "John" <br>
+                    print(x) <br>
+                    print(y) <br>
+                </code>
+                <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+                <code>
+                    Example <br>
+                    x = 4 # x is of type int <br>
+                    x = "Sally" # x is now of type str <br>
+                    print(x)
+                </code>
+                <br>
+                <h3>Casting</h3>
+                <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+                <code>
+                    Example <br>
+                    x = str(3) # x will be '3' <br>
+                    y = int(3) # y will be 3 <br>
+                    z = float(3) # z will be 3.0
+                </code>
+                <br>
+                <h3>Get the Type</h3>
+                <p>You can get the data type of a variable with the <span class="codespan">type()</span> function.</p>
+                <code>
+                    Example <br>
+                    x = 5 <br>
+                    y = "John" <br>
+                    print(type(x)) <br>
+                    print(type(y))
+                </code>
+                <br>
+                <h3>Single or Double Quotes?</h3>
+                <p>String variables can be declared either by using single or double quotes:</p>
+                <code>
+                    Example <br>
+                    x = "John" <br>
+                    # is the same as <br>
+                    x = 'John'
+                </code>
+                <br>
+                <h3>Case-Sensitive</h3>
+                <p>Variable names are case-sensitive</p>
+                <code>
+                    Example <br>
+                    This will create two variables: <br>
+
+                    a = 4 <br>
+                    A = "Sally" <br>
+                    #A will not overwrite a
+                </code>
+            </article>
+        </section>
+        <!--------------------------------->
+        <section id="python_data_types" class="main-section">
+            <header>Python Data Types</header>
+            <article>
+                <h3>Python Data Types</h3>
+                <p>In programming, data type is an important concept.</p>
+                <p>Variables can store data of different types, and different types can do different things.</p>
+                <p>Python has the following data types built-in by default, in these categories:</p>
+                <ul>
+                    <li>Text type: str</li>
+                    <li>Numeric Types: int, float, complex</li>
+                    <li>Sequence Types: list, tuple, range</li>
+                    <li>Mapping Types: dict</li>
+                    <li>Set Types: set, frozenset</li>
+                    <li>Boolean Types: bool</li>
+                    <li>Binary Types: bytes, bytearray, memoryview</li>
+                </ul>
+            </article>
+        </section>
+        <!----------------------------------->
+        <section id="python_if_else" class="main-section">
+            <header>Python if Else</header>
+            <article>
+                <h3>Python Conditions and if statements</h3>
+                <p>Python supports the usual logical conditions from mathematics:</p>
+                <ul>
+                    <li>Equals: <code>a == b</code> </li>
+                    <li>Not Equals: <code>a != b</code> </li>
+                    <li>Less than: <code>a < b</code> </li>
+                    <li>Less than or equal to: <code>a <= b</code> </li>
+                    <li>Greater than: <code>a > b</code> </li>
+                    <li>Greater than or equal to: <code>a >= b</code> </li>
+                </ul>
+            </article>
+
+        </section>
+        <!---------------------------------->
+        <section id="python_boolean" class="main-section">
+            <header>Python Boolean</header>
+            <article>
+                <p>Booleans represent one of two values: True or False.</p>
+                <h3>Boolean Values</h3>
+                <p>In programming you often need to know if an expression is True or False.</p>
+                <p>You can evaluate any expression in Python, and get one of two answers, True or False.</p>
+                <p>When you compare two values, the expression is evaluated and Python returns the Boolean answer:</p>
+                <code>print(10 > 9) <br> 
+                      print(10 == 9) <br>
+                      print(10 < 9)  
+                </code>
+                <p>Example:</p>
+                <p>Print a message based on whether the condition is True or False:</p>
+                <code> a = 200 <br>
+                       b = 33 <br>
+
+                       if b > a: <br>
+                          print("b is greater than a") <br>
+                       else: <br>
+                          print("b is not greater than a")
+                </code>
+            </article>
+        </section>
+        <!-------------------------------->
+        <section id="python_while_loops" class="main-section">
+            <header>Python While Loops</header>
+            <h3>Python Loops</h3>
+            <p>Python has two primitive loop commands:</p>
+            <ul>
+                <li><span class="codespan">while </span>loops</li>
+                <li><span class="codespan">for </span>loops</li>
+            </ul>
+            <h3>The while Loop</h3>
+            <p>With the <span class="codespan">while </span>loop we can execute a set of statements as long as a condition is true.</p>
+            <code>
+                Example <br>
+
+                Print i as long as i is less than 6: <br>
+                i = 1 <br>
+                while i < 6: <br>
+                    print(i) <br>
+                    i += 1 <br>
+            </code>
+            <p>The <span class="codespan">while</span> loop requires relevant variables to be ready, in this example we need to define an indexing variable, <span class="codespan">i</span>, which we set to 1.</p>
+            <br>
+            <h3>The break Statement</h3>
+            <p>With the <span class="codespan">break</span> statement we can stop the loop even if the while condition is true:</p>
+            <code>
+                Example <br>
+                Exit the loop when i is 3: <br>
+                i = 1 <br>
+                while i < 6: <br>
+                    print(i) <br>
+                    if i == 3: <br>
+                        break <br>
+                    i += 1
+
+            </code>
+            <br>
+            <h3>The continue Statement</h3>
+            <p>With the <span class="codespan">continue</span> statement we can stop the current iteration, and continue with the text:</p>
+            <code>
+                Example <br>
+                Continue to the next iteration if i 3: <br>
+                i = 0 <br>
+                while i < 6: <br>
+                    i += 1 <br>
+                    if i == 3: <br>
+                        continue <br>
+                    print(i)
+            </code>
+            <br>
+            <h3>The else Statement</h3>
+            <p>With the <span class="codespan">else</span> statement we can run a block of code once when the condition no longer is true:</p>
+            <code>
+                Example <br>
+                Print a message once the condition is false: <br>
+                i = 1 <br>
+                while i < 6: <br>
+                    print(i) <br>
+                    i += 1 <br>
+                else: <br>
+                    print("i is no longer less than 6")
+            </code>
+        </section>
+        <!--------->
+        <section id="additional" class="main-section">
+            <header>Additional</header>
+            <h3>For more information: <a href="https://www.w3schools.com/python/default.asp" target="_blank">Click Here</a></h3>
+        </section>
+     
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
